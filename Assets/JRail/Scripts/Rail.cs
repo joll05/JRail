@@ -16,10 +16,10 @@ public class Rail : MonoBehaviour
     {
         RailPoint newPoint = ScriptableObject.CreateInstance<RailPoint>();
 
-        //If this is the first point, make it the start point
+        // If this is the first point, make it the start point
         if(points.Length == 0) startPoint = newPoint;
 
-        //Add the new point to the end of the array
+        // Add the new point to the end of the array
         Array.Resize(ref points, points.Length + 1);
         points[points.Length - 1] = newPoint;
 
